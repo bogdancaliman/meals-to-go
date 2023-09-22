@@ -24,7 +24,7 @@ export const RestaurantsScreen = () => {
   return (
     <SafeArea>
       <SearchContainer>
-        <Searchbar />
+        <Searchbar elevation={2} />
       </SearchContainer>
       <RestaurantListContainer>
         <RestaurantInfo />
