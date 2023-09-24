@@ -14,7 +14,7 @@ import {
   Address,
 } from "./restaurant-info-card.styles";
 
-export const RestaurantInfo = ({ restaurant = {} }) => {
+export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Some Restaurant",
     icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
@@ -30,7 +30,7 @@ export const RestaurantInfo = ({ restaurant = {} }) => {
   const ratingArray = Array.from(new Array(Math.floor(rating)));
 
   return (
-    <RestaurantCard elevation={5}>
+    <RestaurantCard elevation={2}>
       <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
       <Info>
         <Text variant="label">{name}</Text>
