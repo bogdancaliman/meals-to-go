@@ -22,7 +22,7 @@ const RestaurantList = styled(FlatList).attrs({
 
 export const RestaurantsScreen = () => {
   return (
-    <SafeArea>
+    <>
       <SearchContainer>
         <Searchbar elevation={2} />
       </SearchContainer>
@@ -46,6 +46,6 @@ export const RestaurantsScreen = () => {
         )}
         keyExtractor={(item) => item.name}
       />
-    </SafeArea>
+    </>
   );
 };
